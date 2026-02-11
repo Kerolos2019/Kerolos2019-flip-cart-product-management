@@ -1,7 +1,7 @@
 from langchain_astradb import AstraDBVectorStore
 from langchain_huggingface import HuggingFaceEndpointEmbeddings
-from flipkart.data_converter import DataConverter
-from flipkart.config import Config
+from data_converter import DataConverter
+from config import Config
 
 class DataIngestor:
     def __init__(self):
@@ -25,3 +25,6 @@ class DataIngestor:
 
         return self.vstore
 
+# if __name__ =="__main__":
+#     data_ingestion=DataIngestor()
+#     data_ingestion.ingest(load_existing=False)
